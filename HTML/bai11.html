@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>External Links with Tooltips</title>
+    <style>
+     
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+
+     
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+
+        
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -60px;
+      }
+
+      
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>NguyenTruongThinh</h1>
+    <p>profiles:</p>
+    <ul>
+      <li class="tooltip"><a href="https://www.twitter.com" title="Twitter">Twitter</a><span class="tooltiptext"></span></li>
+      <li class="tooltip"><a href="https://www.facebook.com" title="Facebook">Facebook</a><span class="tooltiptext"></span></li>
+      <li class="tooltip"><a href="https://www.flickr.com" title="Flickr">Flickr</a><span class="tooltiptext"></span></li>
+    </ul>
+  </body>
+</html>
